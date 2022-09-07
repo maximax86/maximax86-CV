@@ -1,0 +1,356 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+}
+
+/*====Navegador====================================*/
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    background-color: rgb(168, 0, 0);
+    text-align: center;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    margin: 0.5em;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 2em;
+    transition: 0.5s;
+}
+
+.topnav a:hover {
+    border-radius: 2em;
+    background-color: #ddd;
+    color: black;
+}
+
+.nav01:hover{
+    transform: rotate(-15deg);
+}
+
+.nav02:hover{
+    transform: rotate(15deg);
+}
+
+/*====Inicio====================================*/
+
+.contenedor {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 88%;
+    background-color: rgb(255, 255, 255);
+}
+
+.elemento {
+    transform: rotate(45deg);
+    background-image: radial-gradient(circle, rgb(148, 0, 0), rgb(231, 47, 47), #ca0000);
+    border-radius: 1em;
+    border-top: solid;
+    border-left: solid;
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 5px #000000;
+    text-align: center;
+}
+
+#contenedorBotonesSup,#contenedorBotonesInf {
+    display: flex;
+    height: 50%;
+}
+
+.boton1,.boton2 {
+    transform: rotate(-45deg);
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0);
+    background-color: #2c2c2c;
+    border-color: #000000;
+    margin: 1%;
+    width: 49%;
+    height: 96%;
+    box-shadow: 1px 1px 1px #000000;
+    transition: 0.5s;
+    border-style: ridge;
+}
+
+.boton1 {
+    border-radius: 50em 1em;
+}
+
+.boton2 {
+    border-radius: 1em 50em;
+}
+
+
+.boton1:hover {
+    border-radius: 5em;
+    color: white;
+    background-color: #2c2c2cda;
+}
+
+.boton2:hover {
+    color: white;
+    border-radius: 5em;
+    background-color: #2c2c2cda;
+}
+
+/*====Contenedor General====================================*/
+
+.contenedorGeneral{
+    margin: 1em;
+}
+
+
+/*====General Modal====================================*/
+
+/* The Modal (background) */
+.modalSob,.modalFor,.modalPor,.modalCon {
+    display: none;    /* Hidden by default */
+    position: fixed;    /* Stay in place */
+    z-index: 1;    /* Sit on top */
+    padding-top: 10px;    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;    /* Full width */
+    height: 100%;    /* Full height */
+    overflow: auto;    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-Sob,.modal-content-For,
+.modal-content-Por,.modal-content-Con {
+    color: black;
+    background-color: #3a3a3a11;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 2em;
+    width: 80%;
+}
+
+/*Especifico para este*/
+#baseFor, #baseSob, #basePor {
+    border-radius: 2em;
+    padding: 1%;
+    color: rgb(255, 255, 255);
+}
+
+#baseFor {
+    background-color: #3a3a3a;
+}
+
+#baseSob, #basePor {
+    background-color: #ffffff;
+}
+
+/* The Close Button */
+.closeSob,.closeFor,.closePor,.closeCon {
+    background-color: rgba(219, 2, 2, 0.959);
+    border-radius: 5em;
+    color: #000000;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closeSob:hover,.closeSob:focus,
+.closeFor:hover,.closeFor:focus,
+.closePor:hover,.closePor:focus,
+.closeCon:hover,.closeCon:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*====Sobre Mi====================================*/
+
+#sobreMiATitulo1 {
+    transition: all 0.5s ease;
+    font-size: 30px;
+    color: rgb(253, 68, 0);
+    text-decoration: underline rgb(165, 226, 217);
+    text-shadow: 2px 2px rgba(91, 238, 128, 0.199);
+    text-emphasis: circle white;
+}
+
+#sobreMiATitulo2 {
+    transition: all 0.5s ease;
+    color: rgb(41, 59, 75);
+    text-decoration: underline rgb(255, 152, 115);
+}
+
+#sobreMiB {
+    border-radius: 1em;
+    text-indent: 1.5em;
+    padding: 1%;
+    background-color: rgb(255, 243, 239);
+    color: rgb(41, 59, 75);
+    font-size: 20px;
+}
+
+/*====Formacion====================================*/
+
+.h1Formacion {
+    display: flex;
+    color: rgb(147, 223, 212);
+    font-size: 20px;
+}
+
+.ulFormacion {
+    color: rgb(248, 217, 159);
+    line-height: 3ex;
+    transition: all 0.5s ease;
+}
+
+/*====Portfolio====================================*/
+
+.portfolioH1 {
+    font-size: 30px;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(208, 240, 240));
+    color: rgb(61, 61, 61);
+    font: bold;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+}
+
+.portfolioImg {
+    padding-bottom: 2em;
+    display: block;
+    text-align: center;
+}
+
+.imagenPortfolio {
+    background-color: rgba(85, 85, 85, 0.863);
+    border-radius: 1em;
+    width: 300px;
+    height: 350px;
+}
+
+.imagenPortfolio:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+/*====Contacto====================================*/
+
+#contenedorContacto01 {
+    border-radius: 20px;
+    width: 98%;
+    height: 100%;
+    background-color: rgb(250, 139, 35);
+}
+
+#contenedorContacto02 {
+    border-radius: 20px;
+    margin: 0% 7%;
+    width: 93%;
+    background-color: rgb(147, 223, 212);
+}
+
+#formulario {
+    padding: 90px 50px;
+}
+
+#h1Contacto {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(208, 240, 240));
+    margin-bottom: 50px;
+}
+
+.ingreso {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(211, 235, 255);
+    background-color: rgb(147, 223, 212);
+}
+
+#enviarFormulario {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 49, 61);
+}
+
+#enviarFormulario:hover {
+    cursor: pointer;
+    color: rgb(41, 59, 75);
+    background-color: #fff;
+    text-shadow: 1px 1px 6px #fff;
+}
+
+#redesSociales {
+    padding-bottom: 1em;
+    font-size: 20px;
+    text-align: center;
+}
+
+.redes {
+    color: rgba(0, 0, 0, 0.719);
+    text-decoration: none;
+    margin: 0.1em;
+    transition: 0.5s;
+}
+
+.redes:hover {
+    background-color: white;
+    border-radius: 2em;
+}
+
+/*====Footer====================================*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom:0;
+    clear:both;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+ }
+
+/*====Pagina Extra====================================*/
+
+.cajasContenedoras{
+    margin: 1%;
+}
+
+.volverArriba{
+    float: right;
+    text-decoration: none;
+    background-color: rgba(48, 48, 48, 0.829);
+    color: white;
+    border-radius: 0.5em;
+    font-size: 40px;
+}
+
+.volverArriba:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+    color: rgba(48, 48, 48, 0.829);
+    font-size: 50px;
+}

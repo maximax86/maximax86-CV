@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<%- include('partials/head') %>
+
+  <body>
+
+    <!-- Navbar -->
+    <%- include('partials/navbar') %>
+
+      <!-- Logonav -->
+      <%- include('pages/logonav') %>
+
+        <!-- Sobre Mi -->
+        <div id="myModalSob" class="modalSob">
+          <div class="modal-content-Sob">
+            <span class="closeSob" onclick="Close()">&times;</span>
+            <%- include('pages/sobremi') %>
+          </div>
+        </div>
+
+        <!-- Formacion -->
+        <div id="myModalFor" class="modalFor">
+          <div class="modal-content-For">
+            <span class="closeFor" onclick="Close()">&times;</span>
+            <%- include('pages/formacion') %>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div id="myModalPor" class="modalPor">
+          <div class="modal-content-Por">
+            <span class="closePor" onclick="Close()">&times;</span>
+            <%- include('pages/portfolio') %>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div id="myModalCon" class="modalCon">
+          <div class="modal-content-Con">
+            <span class="closeCon" onclick="Close()">&times;</span>
+            <%- include('pages/contacto') %>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <%- include('partials/footer') %>
+
+  </body>
+
+</html>
